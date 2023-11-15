@@ -84,7 +84,7 @@ docker build -t goordonchen/hostloc-bot:latest .
 
 ```bash
 docker pull goordonchen/hostloc-bot:latest
-docker run -d --name my-hostloc-bot -v /root/hostloc:/usr/src/app goordonchen/hostloc-bot:latest
+docker run -d --restart always --name my-hostloc-bot -v /root/hostloc:/usr/src/app goordonchen/hostloc-bot:latest
 ```
 
 ## 感谢
