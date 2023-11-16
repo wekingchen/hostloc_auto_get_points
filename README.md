@@ -76,7 +76,7 @@ docker build -t goordonchen/hostloc-bot:latest .
         ```
         0 1 * * * python /usr/src/app/hostloc_auto_get_points.py >> /proc/1/fd/1 2>&1
         ```
-        后续可在Docker容器的日志中中查看运行日志。
+        后续可在Docker容器的日志中查看运行日志。
 
 ## 步骤 5: 运行容器
 
