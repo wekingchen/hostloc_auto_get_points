@@ -74,9 +74,9 @@ docker build -t goordonchen/hostloc-bot:latest .
     - 在 `/root/hostloc` 目录下创建名为 `crontab.conf` 的文件以配置定时任务。例如，要每天凌晨 1 点执行脚本，可以这样配置：
 
         ```
-        0 1 * * * python /usr/src/app/hostloc_auto_get_points.py >> /usr/src/app/hostloc.log 2>&1
+        0 1 * * * python /usr/src/app/hostloc_auto_get_points.py >> /proc/1/fd/1 2>&1
         ```
-        后续可在 `/root/hostloc` 目录下hostloc.log中查看运行日志。
+        后续可在Docker容器的日志中中查看运行日志。
 
 ## 步骤 5: 运行容器
 
